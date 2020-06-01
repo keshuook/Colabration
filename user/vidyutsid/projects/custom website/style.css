@@ -21,10 +21,9 @@
    background-color: green;
     color: #ccc;
 }
-#top-nav a:hover:not(.Home)
+#top-nav a:hover
 {
-    background-color: ;
-    color: ;
+	color: #222;
 }
 #loader {
 	
