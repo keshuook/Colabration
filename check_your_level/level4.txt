@@ -1,0 +1,1 @@
+create a webaplication using window.open methord in js
