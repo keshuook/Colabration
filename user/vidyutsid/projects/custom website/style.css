@@ -3,6 +3,29 @@
 	width: 100%;
 	top: 0;
 }
+#top-nav
+{
+    overflow: hidden;
+    background-color: #aaa;
+}
+#top-nav a
+{
+    display:block;
+    color: #444;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+#top-nav a.Home
+{
+   background-color: green;
+    color: #ccc;
+}
+#top-nav a:hover:not(.Home)
+{
+    background-color: ;
+    color: ;
+}
 #loader {
 	
 }
