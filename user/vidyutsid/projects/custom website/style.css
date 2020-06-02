@@ -40,6 +40,11 @@ body {
 #side-bar {
 	
 }
+#side-bar iframe {
+border: none;
+width: 100%;
+height: 100%;	
+}
 #main {
 	
 }
