@@ -1,22 +1,24 @@
 var load = document.getElementById('loader');
-// load.innerHTML = "Loading";
+var loadtext = document.getElementById('load-text');
 function loaded(){
 	setTimeout(function(){
-	load.innerHTML = "";
+	load.style.display = "none";
 	},200);
 }
 setInterval(function(){
 	if(navigator.onLine == false){
 		setTimeout(function(){
-			var Win = window.open("","","height=200;width=200;");
-			Win.document.write("<h1>Error: Disconnected</h1>");
-			setTimeout(function(){
-					Win.close();
+			loadtext.innerHTML = "You have been disconnected.";
+			load.style.display = "block";
 			},1000);
-		},500);
-	}
+		}else{
+			setTimeout(function(){
+			load.style.display = "none";
+			},1000);
+		}
 },50);
 function error(){
 	console.error("Error");
-	document.write("error");
+	loadtext.innerHTML = "Error please reload the page.";
+	load.style.display = "block";
 }
