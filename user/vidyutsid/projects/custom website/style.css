@@ -38,7 +38,19 @@ body {
 	cursor: pointer;	
 }
 #side-bar {
-	
+	width: 30%;
+}
+#side-bar a
+{
+    background-color: #ccc;
+    color: #000;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+#side-bar a:hover
+{
+    background-color: #bbb;
 }
 #side-bar iframe {
 border: none;
