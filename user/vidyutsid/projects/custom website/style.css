@@ -38,7 +38,9 @@ body {
 	cursor: pointer;	
 }
 #side-bar {
+	float: left;
 	width: 30%;
+	background-color: #ddd;
 }
 #side-bar a
 {
