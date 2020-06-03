@@ -5,6 +5,18 @@ function loaded(){
 	load.style.display = "none";
 	},200);
 }
+window.onscroll = function() {Function()};
+
+var header = document.getElementById("top-nav");
+var sticky = header.offsetTop;
+
+function Function() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 setInterval(function(){
 	if(navigator.onLine == false){
 		setTimeout(function(){
@@ -22,3 +34,6 @@ function error(){
 	loadtext.innerHTML = "Error please reload the page.";
 	load.style.display = "block";
 }
+setTimeout(function(){
+	console.clear();
+},1000);
