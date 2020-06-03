@@ -1,7 +1,5 @@
 #top-nav {
-	position: fixed;
 	width: 100%;
-	top: 0;
 }
 #top-nav
 {
@@ -59,15 +57,24 @@ border: none;
 width: 100%;
 height: 100%;	
 }
-#main 
-{
+#main {
 	background-color: #ccc;
 	text-decoration: none;
 	font-size: medium;
 	padding: 10px;
-		
+	float: right;
+	width: 63%;
 }
-#featured 
-{
-	
+#featured {
+background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;	
+}
+#featured iframe {
+	width: 100%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
