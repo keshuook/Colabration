@@ -65,15 +65,18 @@ height: 100%;
 	float: right;
 	width: 63%;
 }
-#featured {
+#featured 
+{
 background-color: #f1f1f1;
   padding: 30px;
   text-align: center;	
 }
-#featured iframe {
+#featured iframe 
+{
 	width: 100%;
 }
-.sticky {
+.sticky 
+{
   position: fixed;
   top: 0;
   width: 100%;
