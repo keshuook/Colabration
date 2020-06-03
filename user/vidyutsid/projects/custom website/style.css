@@ -63,10 +63,9 @@ height: 100%;
 	background-color: #ccc;
 	text-decoration: none;
 	font-size: medium;
-	padding: 10px;
-	float: right;
-	width: 63%;
+	padding: 10px;	
 }
-#featured {
+#featured 
+{
 	
 }
