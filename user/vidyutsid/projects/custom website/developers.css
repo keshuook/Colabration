@@ -1,9 +1,10 @@
 .card {
-	background-color: #eee;
+	background-color: #ccc;
 	float: left;
 	cursor: url(mouse.png), pointer;
 	display:block;
 }
 #info {
 	float: right;
+	background-color: #ccc;
 }
