@@ -1,9 +1,9 @@
 .card {
-	left:0;
-	animation-name: moveto;
-	animation-duration: 2s;
+	background-color: #eee;
+	float: left;
+	cursor: url(mouse.png), pointer;
+	display:block;
 }
-@keyframes moveto{
-	from {left:0;}
-	to {left:100;}
+#info {
+	float: right;
 }
