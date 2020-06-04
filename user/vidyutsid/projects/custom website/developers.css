@@ -1,0 +1,9 @@
+.card {
+	left:0;
+	animation-name: moveto;
+	animation-duration: 2s;
+}
+@keyframes moveto{
+	from {left:0;}
+	to {left:100;}
+}
