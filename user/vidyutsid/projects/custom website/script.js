@@ -3,7 +3,7 @@ var loadtext = document.getElementById('load-text');
 function loaded(){
 	setTimeout(function(){
 	load.style.display = "none";
-},4000);
+},6000);
 }
 window.onscroll = function() {Function()};
 
