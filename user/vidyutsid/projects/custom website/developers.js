@@ -6,7 +6,7 @@ function info(x){
 	document.getElementById('info').innerHTML = x;
 }
 function animate() {
-	info("Keshuook");
+	info("<h2>Keshuook</h2>Keshuook is one of our developers. Keshuook's website can be found<a href='https://keshuook.github.io'>here</a>");
 }
 function animate2() {
 	info("vidyutsid");
