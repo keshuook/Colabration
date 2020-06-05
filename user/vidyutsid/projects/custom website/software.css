@@ -1,5 +1,16 @@
-#mysidenav
+#mysidenav a
 {
   position: absolute;
-  
+  left: -120px;
+  transition: 0.5s;
+  padding: 20px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+#mysidenav a:hover
+{
+  left: 0;
 }
