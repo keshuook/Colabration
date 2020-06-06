@@ -19,3 +19,18 @@
   top: 200px;
   background-color: #4CAF50;
 }
+#developers
+{
+  top:270px;
+  background-color: red;
+}
+#what
+{
+  top: 340px;
+  background-color: blue;
+}
+#features
+{
+  top: 510px;
+  background-color: brown;
+}
