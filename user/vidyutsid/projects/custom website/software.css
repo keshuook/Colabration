@@ -13,7 +13,7 @@
 @media only screen and (max-width: 800px) {
 #mysidenav a {
 	left: 0;
-}	
+}
 }
 #mysidenav a:hover
 {
@@ -36,6 +36,6 @@
 }
 #features
 {
-  top: 510px;
+  top: 410px;
   background-color: brown;
 }
