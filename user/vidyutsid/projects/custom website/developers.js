@@ -9,7 +9,7 @@ function animate() {
 	info("<h2>Keshuook</h2>Keshuook is one of our developers. Keshuook's website can be found<a href='https://keshuook.github.io'>here</a>");
 }
 function animate2() {
-	info("vidyutsid");
+	info("<h2>vidyutsid</h2>vidyutsid is one of our developers.vidyutsid's website can be found<a href='https://vidyutsid.github.io'>here</a>");
 }
 setTimeout(function(){
 	console.clear();
