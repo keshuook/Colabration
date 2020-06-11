@@ -33,15 +33,19 @@ function checkKey(e) {
 
 }
 // declares variables and costants
-const FPS = 1000/60;
+const FPS = 1000/120;
 var x = 100;
 var y = 300;
 var z = 40;
 function move(num,dir){
 	if (dir == "x"){
-		x += num;
+    for (var i = 0; i < num; i++) {
+		    x++;
+    }
 	}else{
-		z += num;
+    for (var i = 0; i < num; i++) {
+		    z++;
+    }
 	}
 	if(z < 0){
 		z = 0;
