@@ -25,26 +25,44 @@ function checkKey(e) {
         move(-2,"z");
     }
     else if (e.keyCode == '37') {
-        move(-3*z/20,"x");
+        move(-3*z/40,"x");
     }
     else if (e.keyCode == '39') {
-        move(+3*z/20,"x");
+        move(+3*z/40,"x");
     }
 
 }
 // declares variables and costants
-const FPS = 1000/120;
+const FPS = 1000/240;
 var x = 100;
 var y = 300;
 var z = 40;
 function move(num,dir){
+	if(num < 0){
+		num = -num;
+		var back = true;
+	}else{
+		var back = false;
+	}
 	if (dir == "x"){
     for (var i = 0; i < num; i++) {
-		    x++;
+		setTimeout(function(){
+			if(back){
+				x--;
+			}else{
+				x++;
+			}
+		},5);
     }
 	}else{
     for (var i = 0; i < num; i++) {
-		    z++;
+		setTimeout(function(){
+			if(back){
+				z--;
+			}else{
+				z++;
+			}
+		},5);
     }
 	}
 	if(z < 0){
