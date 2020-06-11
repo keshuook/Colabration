@@ -1,3 +1,4 @@
+// Defines all canvas elements and draw functions
 var canvas = document.getElementById('canvas');
 var canvasContext = canvas.getContext('2d');
 function rect(x,y,x2,y2,color) {
@@ -10,6 +11,7 @@ canvasContext.beginPath();
 canvasContext.arc(x,y,middle,radius,Math.PI,true);
 canvasContext.fill();
 }
+// gets keys that are pressed
 document.onkeydown = checkKey;
 
 function checkKey(e) {
@@ -30,6 +32,8 @@ function checkKey(e) {
     }
 
 }
+// declares variables and costants
+const FPS = 1000/60;
 var x = 100;
 var y = 300;
 var z = 40;
@@ -45,9 +49,10 @@ function move(num,dir){
 		z = 150;
 	}
 }
+// draws al at the rate of const FPS
 setInterval(function(){
 	rect(0,0,canvas.width,canvas.height,"#fff");
 	rect(0,500,1200,100,"green");
 	rect(x,y,z,z+50,'red');
 	document.getElementById('events').innerHTML = "x: "+Math.floor(x)+" y: "+y+" z: "+z;
-},50);
+},FPS);
