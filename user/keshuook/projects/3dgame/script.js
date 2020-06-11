@@ -17,37 +17,37 @@ function checkKey(e) {
     e = e || window.event;
 
     if (e.keyCode == '38') {
-        move(+1,"z");
+        move(+2,"z");
     }
     else if (e.keyCode == '40') {
-        move(-1,"z");
+        move(-2,"z");
     }
     else if (e.keyCode == '37') {
-        move(-3,"x");
+        move(-3*z/20,"x");
     }
     else if (e.keyCode == '39') {
-        move(+3,"x");
+        move(+3*z/20,"x");
     }
 
 }
 var x = 100;
-var y = 100;
+var y = 300;
 var z = 40;
-var size = 10;
 function move(num,dir){
 	if (dir == "x"){
 		x += num;
 	}else{
 		z += num;
-		size += num;
 	}
-	if(size < 0){
-		size = 0;
+	if(z < 0){
 		z = 0;
+	}else if(z > 150){
+		z = 150;
 	}
 }
 setInterval(function(){
 	rect(0,0,canvas.width,canvas.height,"#fff");
-	rect(x,y,size,size,'green');
-	document.getElementById('events').innerHTML = "x: "+x+" y: "+y+" z: "+z;
+	rect(0,500,1200,100,"green");
+	rect(x,y,z,z+50,'red');
+	document.getElementById('events').innerHTML = "x: "+Math.floor(x)+" y: "+y+" z: "+z;
 },50);
