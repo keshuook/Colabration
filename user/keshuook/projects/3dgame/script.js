@@ -79,7 +79,11 @@ function move(num,dir){
 setInterval(function(){
 	rect(0,0,canvas.width,canvas.height,"#fff");
 	rect(0,500,canvas.width,100,"green");
-	rect(x,y,z,z+50,'red');
-  rect(x,y,z,z,'blue')
+	rect(x,y,z+350,z+50,'red');
+  rect(x,y,z,z,'blue');
+  rect(x+150,y,z+200,z,'#4caf50');
+  rect(x+200,y,z+15,z+50,'#000');
+  circle(x+100,y+200,z/4,0.0,'black');
+  circle(x+410,y+200,z/4,0.0,'black');
 	document.getElementById('events').innerHTML = "x: "+Math.floor(x)+" y: "+y+" z: "+z;
 },FPS);
