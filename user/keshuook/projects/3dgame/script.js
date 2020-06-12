@@ -13,21 +13,22 @@ canvasContext.fill();
 }
 // gets keys that are pressed
 document.onkeydown = checkKey;
-
 function checkKey(e) {
-
     e = e || window.event;
-
-    if (e.keyCode == '38') {
+    if (e.keyCode == '87') {
+		// W key pressed
         move(+2,"z");
     }
-    else if (e.keyCode == '40') {
+    else if (e.keyCode == '83') {
+		// S key pressed
         move(-2,"z");
     }
-    else if (e.keyCode == '37') {
+    else if (e.keyCode == '65') {
+		// A key pressed
         move(-3*z/40,"x");
     }
-    else if (e.keyCode == '39') {
+    else if (e.keyCode == '68') {
+		// D key pressed
         move(+3*z/40,"x");
     }
 
@@ -37,6 +38,7 @@ const FPS = 1000/240;
 var x = 100;
 var y = 300;
 var z = 40;
+// Function move used when WASD pressed
 function move(num,dir){
 	if(num < 0){
 		num = -num;
@@ -45,6 +47,7 @@ function move(num,dir){
 		var back = false;
 	}
 	if (dir == "x"){
+		// adds lag
     for (var i = 0; i < num; i++) {
 		setTimeout(function(){
 			if(back){
@@ -65,6 +68,7 @@ function move(num,dir){
 		},5);
     }
 	}
+	// does not let it go out of hand
 	if(z < 0){
 		z = 0;
 	}else if(z > 150){
@@ -74,7 +78,7 @@ function move(num,dir){
 // draws al at the rate of const FPS
 setInterval(function(){
 	rect(0,0,canvas.width,canvas.height,"#fff");
-	rect(0,500,1200,100,"green");
+	rect(0,500,canvas.width,100,"green");
 	rect(x,y,z,z+50,'red');
 	document.getElementById('events').innerHTML = "x: "+Math.floor(x)+" y: "+y+" z: "+z;
 },FPS);
