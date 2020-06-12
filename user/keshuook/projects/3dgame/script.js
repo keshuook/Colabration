@@ -75,15 +75,18 @@ function move(num,dir){
 		z = 150;
 	}
 }
-// draws al at the rate of const FPS
+// draws all at the rate of the const FPS
 setInterval(function(){
+	y = -z+450;
 	rect(0,0,canvas.width,canvas.height,"#fff");
 	rect(0,500,canvas.width,100,"green");
-	rect(x,y,z+350,z+50,'red');
-  rect(x,y,z,z,'blue');
-  rect(x+150,y,z+200,z,'#4caf50');
-  rect(x+200,y,z+15,z+50,'#000');
-  circle(x+100,y+200,z/4,0.0,'black');
-  circle(x+410,y+200,z/4,0.0,'black');
+	if(z > 0){
+	rect(x,y,z+420,z+50,'red');
+	rect(x,y,z,z,'blue');
+	rect(x+150,y,z+270,z,'#4caf50');
+	rect(x+200,y,z+5,z+50,'#000');
+	circle(x+100,500,z/4,0,);
+	circle(x+410,500,z/4,0,);
+	}
 	document.getElementById('events').innerHTML = "x: "+Math.floor(x)+" y: "+y+" z: "+z;
 },FPS);
