@@ -76,5 +76,6 @@ setInterval(function(){
 	rect(0,0,canvas.width,canvas.height,"#fff");
 	rect(0,500,1200,100,"green");
 	rect(x,y,z,z+50,'red');
+  rect(x,y,z,z,'blue')
 	document.getElementById('events').innerHTML = "x: "+Math.floor(x)+" y: "+y+" z: "+z;
 },FPS);
