@@ -74,9 +74,9 @@ function move(num,dir){
 	if(z < 0){
 		x -= 0.6;
 		z = 0;
-	}else if(z > 150){
+	}else if(z > 180){
 		x += 0.6;
-		z = 150;
+		z = 180;
 	}
 }
 // draws all at the rate of the const FPS
@@ -88,9 +88,9 @@ setInterval(function(){
 	rect(x,y,z+420,z+50,'red');
 	rect(x,y,z,z,'blue');
 	rect(x+150,y,z+270,z,'#4caf50');
-	rect(x+200,y,z+5,z+50,'#000');
+	rect(x+200,y,z-10,z+50,'#000');
 	circle(x+100,500,z/4,0,);
-	circle(x+410,500,z/4,0,);
+	circle(x+430,500,z/4,0,);
 	}
 	document.getElementById('events').innerHTML = "x: "+Math.floor(x)+" y: "+y+" z: "+z;
 },FPS);
