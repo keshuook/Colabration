@@ -61,8 +61,10 @@ function move(num,dir){
     for (var i = 0; i < num; i++) {
 		setTimeout(function(){
 			if(back){
+				x+=0.3;
 				z--;
 			}else{
+				x-=0.3;
 				z++;
 			}
 		},5);
@@ -70,8 +72,10 @@ function move(num,dir){
 	}
 	// does not let it go out of hand
 	if(z < 0){
+		x -= 0.6;
 		z = 0;
 	}else if(z > 150){
+		x += 0.6;
 		z = 150;
 	}
 }
